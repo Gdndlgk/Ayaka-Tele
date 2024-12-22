@@ -7,7 +7,7 @@ bot.onText(/\/bpurba/, async (msg, match) => {
   const chatId = msg.chat.id;
   const text = match.input.split(' ')[1];
   if (!text) {
-    return bot.sendMessage(chatId, 'Silakan masukkan teks yang ingin diubah ke bahasa purba.');
+    return bot.sendMessage(chatId, 'Hallo gok');
   }
   try {
     const response = await axios.get(`https://api.lolhuman.xyz/api/bahasapurba?apikey=dannlaina&text=${encodeURIComponent(text)}`);
